@@ -259,7 +259,7 @@ int main() {
     PlanejadorDeTarefas projeto;
     int opt;
     do {
-        cout << "\n--- GERENCIADOR DE PROJETOS (BIG O ANALYZER) ---" << endl;
+        cout << "\n--- GERENCIADOR DE PROJETOS ---" << endl;
         cout << "1. Cadastrar Tarefa / Dependencias" << endl;
         cout << "2. Gerenciar Pre-requisitos (Editar)" << endl;
         cout << "3. Renomear Tarefa" << endl;
