@@ -16,21 +16,35 @@ A lógica do sistema está na função de gerar o fluxograma, que utiliza o Algo
 
 Conforme o sistema processa essa fila, ele retira as tarefas prontas e simula a conclusão delas, reduzindo o grau de entrada de todas as tarefas subsequentes que dependiam delas. Quando uma dessas tarefas dependentes finalmente tem seu grau reduzido a zero, ela é considerada desbloqueada e entra na fila para a próxima etapa. Esse ciclo continua até que o projeto inteiro seja organizado em níveis de execução simultânea. Caso o algoritmo termine de processar a fila, mas ainda existam tarefas pendentes no sistema, ele detecta automaticamente que há um ciclo lógico insolúvel no projeto, como duas tarefas que dependem uma da outra, e alerta o usuário. Para prevenir que esses ciclos sequer sejam formados durante a fase de planejamento, o programa também utiliza algoritmos de busca preventivos a cada nova dependência cadastrada, garantindo a integridade e a viabilidade do cronograma gerado.
 
-## Testes 
+## Screenshot
+
+A imagem a seguir representa o menu inicial exibido no terminal, o qual pode selecionar qual opção deseja executar
+
+**Imagem 1: Tela inicial**
+![Imagem1](../G29_Grafos_PA-26.1/assets/Tela_inicial.png)
+
 
 Foram executados testes manuais com o sistema. A seguir, são apresentadas as capturas de tela relacionadas à execução dos testes 
 
-## Teste 1: Adicionar Tarefa Simples
+### Teste 1: Adicionar Tarefa Simples
 **Passos:**
 1. Menu → Opção 1
 2. Nome: "Estudar"
 3. Possui pré-requisitos? (s/n): n
 
-**Resultado esperado:** [Ok] Dependencia registrada.
+**Resultado Obtido**
+Figura 2: Criando a tarefa 
+![Figura2](../G29_Grafos_PA-26.1/assets/Teste1_create.png)
+
+Figura 3: Mapa das tarefas
+![Figura3](../G29_Grafos_PA-26.1/assets/Teste1_mapa.png)
+
+Figura 4: Fluxo das tarefas
+![Figura4](../G29_Grafos_PA-26.1/assets/Teste1_fluxo.png)
 
 ---
 
-## Teste 2: Adicionar Dependência Simples
+### Teste 2: Adicionar Dependência Simples
 **Passos:**
 1. Menu → Opção 1
 2. Nome: "Implementar"
@@ -38,11 +52,20 @@ Foram executados testes manuais com o sistema. A seguir, são apresentadas as ca
 4. Nome do pré-requisito: "Estudar"
 5. Adicionar outro? (s/n): n
 
-**Resultado esperado:** [Ok] Dependencia registrada.
+**Resultado obtido:** 
+
+Figura 5: Criando a dependência 
+![Figura5](../G29_Grafos_PA-26.1/assets/Teste2_create.png)
+
+Figura 6: Mapa das tarefas
+![Figura6](../G29_Grafos_PA-26.1/assets/Teste2_mapa.png)
+
+Figura 7: Fluxo das tarefas
+![Figura7](../G29_Grafos_PA-26.1/assets/Teste2_fluxo.png)
 
 ---
 
-## Teste 3: Detecção de Ciclo
+### Teste 3: Detecção de Ciclo
 **Passos:**
 1. Menu → Opção 1
 2. Nome: "A"
@@ -59,23 +82,32 @@ Foram executados testes manuais com o sistema. A seguir, são apresentadas as ca
 13. Menu → Opção 2 → Tarefa: "A"
 14. Opção: 1 (Adicionar) → Pré-requisito: "D"
 
-**Resultado esperado:** [!] ERRO: 'D' causaria um ciclo infinito. Operacao cancelada.
+**Resultado obtido:**
 
+Figura 8: Criação do ciclo
+![Figura8](../G29_Grafos_PA-26.1/assets/Teste3_ciclo.png)
+
+Figura 9: Fluxo das tarefas
+![Figura9](../G29_Grafos_PA-26.1/assets/Teste3_Fluxo.png)
 
 ---
 
-## Teste 4: Remover Pré-requisito
+### Teste 4: Remover Pré-requisito
 **Passos:**
 1. Menu → Opção 2
 2. Tarefa a modificar: "C"
 3. Escolha: 2 (Remover)
 4. Pré-requisito a remover: "B"
 
-**Resultado esperado:** [Ok] Removido.
+Figura 10: Remoção da dependência 
+![Figura10](../G29_Grafos_PA-26.1/assets/teste4_remover.png)
+
+Figura 11: Fluxo após remoção
+![Figura11](../G29_Grafos_PA-26.1/assets/teste4_fluxo.png)
 
 ---
 
-## Teste 5: Adicionar Múltiplas Dependências
+### Teste 5: Adicionar Múltiplas Dependências
 **Passos:**
 1. Menu → Opção 1
 2. Nome: "Projeto Final"
@@ -85,15 +117,21 @@ Foram executados testes manuais com o sistema. A seguir, são apresentadas as ca
 6. Pré-requisito 2: "Testar"
 7. Adicionar outro? (s/n): n
 
-**Resultado esperado:** Ambas as dependências registradas.
+**Resultado obtido:** 
 
-**Verificar com Opção 4:**
-- "Projeto Final" deve ter: Implementar, Testar como pré-requisitos
+Figura 12: Cadastro das dependências
+![Figura12](../G29_Grafos_PA-26.1/assets/Teste5_cadastro.png)
+
+Figura 13: Mapa das tarefas
+![Figura13](../G29_Grafos_PA-26.1/assets/Teste5_mapa.png)
+
+Figura 14: Fluxo das tarefas
+![Figura14](../G29_Grafos_PA-26.1/assets/Teste5_fluxo.png)
 
 ---
 
 
-## Teste 6: Fluxograma com Tarefas Paralelas
+### Teste 6: Fluxograma com Tarefas Paralelas
 **Passos:**
 1. Menu → Opção 1: "Requisitos"
 2. Menu → Opção 1: "Design" (sem pré-req)
@@ -104,14 +142,13 @@ Foram executados testes manuais com o sistema. A seguir, são apresentadas as ca
    - Pré-req: "Implementação"
 5. Menu → Opção 5
 
-**Resultado esperado:**
-```
-[ ETAPA 1 ]
-  Requisitos e Design em paralelo
+**Resultado Obtido:**
 
-[ ETAPA 2 ]
-  Implementação (desbloqueada por ambos)
+Figura 15: Fluxo das tarefas
+![Figura15](../G29_Grafos_PA-26.1/assets/Teste6_fluxo.png)
 
-[ ETAPA 3 ]
-  Testes
-```
+## Instalação 
+**Linguagem C++**
+
+## Gravação
+A gravação pode ser acessada através do link []()
