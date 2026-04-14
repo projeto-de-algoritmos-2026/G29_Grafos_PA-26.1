@@ -21,7 +21,8 @@ Conforme o sistema processa essa fila, ele retira as tarefas prontas e simula a 
 A imagem a seguir representa o menu inicial exibido no terminal, o qual pode selecionar qual opção deseja executar
 
 **Imagem 1: Tela inicial**
-![Imagem1](../G29_Grafos_PA-26.1/assets/Tela_inicial.png)
+
+![Imagem1](assets/Tela_inicial.png)
 
 
 Foram executados testes manuais com o sistema. A seguir, são apresentadas as capturas de tela relacionadas à execução dos testes 
@@ -32,15 +33,19 @@ Foram executados testes manuais com o sistema. A seguir, são apresentadas as ca
 2. Nome: "Estudar"
 3. Possui pré-requisitos? (s/n): n
 
-**Resultado Obtido**
+**Resultado Obtido**:
+
 Figura 2: Criando a tarefa 
-![Figura2](../G29_Grafos_PA-26.1/assets/Teste1_create.png)
+
+![Figura2](assets/Teste1_create.png)
 
 Figura 3: Mapa das tarefas
-![Figura3](../G29_Grafos_PA-26.1/assets/Teste1_mapa.png)
+
+![Figura3](assets/Teste1_mapa.png)
 
 Figura 4: Fluxo das tarefas
-![Figura4](../G29_Grafos_PA-26.1/assets/Teste1_fluxo.png)
+
+![Figura4](assets/Teste1_fluxo.png)
 
 ---
 
@@ -55,13 +60,16 @@ Figura 4: Fluxo das tarefas
 **Resultado obtido:** 
 
 Figura 5: Criando a dependência 
-![Figura5](../G29_Grafos_PA-26.1/assets/Teste2_create.png)
+
+![Figura5](assets/Teste2_create.png)
 
 Figura 6: Mapa das tarefas
-![Figura6](../G29_Grafos_PA-26.1/assets/Teste2_mapa.png)
+
+![Figura6](assets/Teste2_mapa.png)
 
 Figura 7: Fluxo das tarefas
-![Figura7](../G29_Grafos_PA-26.1/assets/Teste2_fluxo.png)
+
+![Figura7](assets/Teste2_fluxo.png)
 
 ---
 
@@ -85,10 +93,12 @@ Figura 7: Fluxo das tarefas
 **Resultado obtido:**
 
 Figura 8: Criação do ciclo
-![Figura8](../G29_Grafos_PA-26.1/assets/Teste3_ciclo.png)
+
+![Figura8](assets/Teste3_ciclo.png)
 
 Figura 9: Fluxo das tarefas
-![Figura9](../G29_Grafos_PA-26.1/assets/Teste3_Fluxo.png)
+
+![Figura9](assets/Teste3_Fluxo.png)
 
 ---
 
@@ -100,10 +110,12 @@ Figura 9: Fluxo das tarefas
 4. Pré-requisito a remover: "B"
 
 Figura 10: Remoção da dependência 
-![Figura10](../G29_Grafos_PA-26.1/assets/teste4_remover.png)
+
+![Figura10](assets/teste4_remover.png)
 
 Figura 11: Fluxo após remoção
-![Figura11](../G29_Grafos_PA-26.1/assets/teste4_fluxo.png)
+
+![Figura11](assets/teste4_fluxo.png)
 
 ---
 
@@ -120,13 +132,16 @@ Figura 11: Fluxo após remoção
 **Resultado obtido:** 
 
 Figura 12: Cadastro das dependências
-![Figura12](../G29_Grafos_PA-26.1/assets/Teste5_cadastro.png)
+
+![Figura12](assets/Teste5_cadastro.png)
 
 Figura 13: Mapa das tarefas
-![Figura13](../G29_Grafos_PA-26.1/assets/Teste5_mapa.png)
+
+![Figura13](assets/Teste5_mapa.png)
 
 Figura 14: Fluxo das tarefas
-![Figura14](../G29_Grafos_PA-26.1/assets/Teste5_fluxo.png)
+
+![Figura14](assets/Teste5_fluxo.png)
 
 ---
 
@@ -145,7 +160,8 @@ Figura 14: Fluxo das tarefas
 **Resultado Obtido:**
 
 Figura 15: Fluxo das tarefas
-![Figura15](../G29_Grafos_PA-26.1/assets/Teste6_fluxo.png)
+
+![Figura15](assets/Teste6_fluxo.png)
 
 ## Instalação 
 **Linguagem C++**
