@@ -167,4 +167,4 @@ Figura 15: Fluxo das tarefas
 **Linguagem C++**
 
 ## Gravação
-A gravação pode ser acessada através do link []()
+A gravação pode ser acessada através do link [https://youtu.be/EVYMweZ4Xec](https://youtu.be/EVYMweZ4Xec)
